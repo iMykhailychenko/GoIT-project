@@ -10,12 +10,17 @@
   transition: 0.3s ease-in-out;
   z-index: 2;
 
+  @media (min-width: 768px) {
+    height: 600px;
+  }
+
   @media (min-width: 1300px) {
     position: static;
     @include d-flex(between, center);
     flex-direction: row;
     background: none;
     width: 1024px;
+    height: 100%;
   }
 
   &--active {
@@ -24,6 +29,11 @@
 
   &__list {
     padding-bottom: 40px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 28px;
+    }
+
     @media (min-width: 1300px) {
       @include d-flex(between, center);
       padding: 0;
@@ -35,6 +45,11 @@
     list-style: none;
     text-align: center;
     padding: 8px 0;
+
+    @media (min-width: 768px) {
+      padding: 6px 0;
+    }
+
     @media (min-width: 1300px) {
       padding: 0;
       margin: 0 -20px;
@@ -55,6 +70,11 @@
       700
     );
     text-decoration: none;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      padding: 8px;
+    }
 
     @media (min-width: 1300px) {
       font-size: 1.29rem;
