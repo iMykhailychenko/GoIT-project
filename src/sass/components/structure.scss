@@ -1,0 +1,131 @@
+.structure {
+  list-style: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+  
+.structure__item {
+  padding-top: 15px;
+
+  @media (min-width: 768px) {
+    padding-top: 25px;
+  }
+}
+
+.structure__wrapper {
+  box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 262px;
+  border-radius: 0 29px 0 29px;
+  position: relative;
+
+  &:hover .structure__description {
+    transform: scale(1.2);
+  }
+
+    &:hover .structure__title {
+        transform: scale(1.2);
+}
+
+&:hover.structure__wrapper__1::after {
+    border-color: #f5bf5d;
+}
+
+&:hover.structure__wrapper__2::after {
+    border-color: #f47c55;
+}
+
+&:hover.structure__wrapper__3::after {
+    border-color: #9563f3;
+}
+
+&:hover.structure__wrapper__4::after {
+    border-color: #0ab2a8;
+}
+
+
+  @media (min-width: 768px) {
+    width: 300px;
+  height: 294px;
+  }
+}
+
+.structure__wrapper::after {
+  content: '';
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 0 29px 0 29px;
+  border-style: dashed;
+  position: absolute;
+  width: 245px;
+  height: 226px;
+  top: 18px;
+  left: 18px;
+
+  @media (min-width: 768px) {
+    width: 262px;
+  height: 260px;
+  }
+}
+
+.structure__wrapper__1 {
+    background-color: $light-accent-color;
+
+    &:hover {
+        background-color: rgba(250, 235, 208, 0.8);
+    }
+}
+
+
+.structure__wrapper__2 {
+    background-color: $light-red-color;
+
+    &:hover {
+        background-color: rgba(251, 220, 210, 0.8);
+    }
+}
+
+.structure__wrapper__3 {
+    background-color: $light-violet-color;
+
+    &:hover {
+        background-color: rgba(226, 216, 245, 0.8);
+    }
+}
+
+.structure__wrapper__4 {
+    background-color:$light-green-color;
+
+    &:hover {
+        background-color: rgba(200, 234, 232, 0.8);
+    }
+}
+
+.structure__title {
+    @include text-decor ($main-text-font, 1.7857rem, $main-black-color, left, 1.2, none, 700);
+    padding-top: 50px;
+    overflow: hidden;
+    max-width: 190px;
+    margin: 0 auto;
+    transition: transform 500ms linear;
+
+    @media (min-width: 768px) {
+        @include text-decor ($main-text-font, 1.875rem, $main-black-color, left, 1.2, none, 700);
+        padding-top: 60px;
+      }
+}
+
+.structure__description {
+    @include text-decor ($main-text-font, 1.1429rem, $main-black-color, left, 1.375, none, 400);
+    padding-top: 25px;
+    max-width: 190px;
+    max-height: 140px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: transform 500ms linear;
+}
+  
