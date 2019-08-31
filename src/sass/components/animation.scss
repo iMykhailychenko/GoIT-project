@@ -1,0 +1,11 @@
+@keyframes skroll {
+  0% {
+    border-bottom: 2px solid rgba(265,265,265,.5);
+    border-right: 2px solid rgba(265,265,265,.5);
+  }
+
+  100% {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+}

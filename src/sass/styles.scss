@@ -2,6 +2,15 @@
    Import partials below
 */
 @import './normalize';
-@import './base';
-@import './variables';
 @import './fonts';
+@import './variables';
+@import './base';
+
+// helpers
+@import './helpers/mixin';
+@import './helpers/placeholder';
+
+// components
+@import './components/header';
+@import './components/navigation';
+@import './components/animation';
