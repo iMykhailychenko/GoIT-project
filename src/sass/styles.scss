@@ -2,6 +2,9 @@
    Import partials below
 */
 @import './normalize';
-@import './base';
-@import './variables';
 @import './fonts';
+@import './variables';
+@import './base';
+@import './mixins.scss';
+@import './components/section.scss';
+@import './components/howteach.scss';
