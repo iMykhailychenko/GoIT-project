@@ -546,6 +546,28 @@ img {
   height: 226px;
   top: 18px;
   left: 18px;
+  -webkit-animation: motion 300ms infinite linear;
+  animation: motion 300ms infinite linear;
+}
+
+@-webkit-keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
+
+@keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
 }
 
 .structure__wrapper__1 {

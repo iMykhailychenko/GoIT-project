@@ -65,12 +65,24 @@
   height: 226px;
   top: 18px;
   left: 18px;
+  animation: motion 300ms infinite linear;
 
   @media (min-width: 768px) {
     width: 262px;
   height: 260px;
   }
 }
+
+@keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
+
 
 .structure__wrapper__1 {
     background-color: $light-accent-color;
