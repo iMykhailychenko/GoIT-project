@@ -2,6 +2,10 @@
    Import partials below
 */
 @import './normalize';
-@import './base';
-@import './variables';
 @import './fonts';
+@import './variables';
+@import './base';
+
+//components
+
+@import './components/s-courses.scss';
