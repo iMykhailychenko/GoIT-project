@@ -1,0 +1,157 @@
+// Footer
+
+.footer {
+  background-color: $main-dark-color;
+  padding-top: 43px;
+
+  &__wrapper {
+    padding-left: 65px;
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  &__logo {
+    width: 107px;
+    height: 28px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  &__info-block-second {
+    margin-top: 20px;
+  }
+
+  &__info {
+    @include text-decor($main-text-font, 1rem, #9699a6, left, 2, none, normal);
+    font-style: normal;
+  }
+
+  &__button {
+    height: 42px;
+    width: 192px;
+    background-color: $main-accent-color;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 32px;
+    transition: background-color 200ms linear;
+    cursor: pointer;
+    @include text-decor($title-font, 1.14rem, #f6f9fa, center, 2, none, bold);
+
+    &:hover,
+    &:focus {
+      background-color: #e99b15;
+    }
+
+    &:active {
+      background-color: #b37710;
+    }
+  }
+
+  &__svg-box {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 146px;
+  }
+
+  &__confidence-box {
+    background-color: $main-black-color;
+    padding: 24px 0;
+  }
+
+  &__confidence-info {
+    @include text-decor($title-font, 0.85rem, #626263, left, 2.083, none, bold);
+  }
+
+  &__telegram-svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  &__icon {
+    width: 37px;
+    height: 37px;
+    border-radius: 20px;
+    fill: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__icon--1 {
+    background-color: #6398e0;
+  }
+
+  &__icon--2 {
+    background-color: #3b4e70;
+  }
+
+  &__icon--3 {
+    background-color: #9f2431;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__wrapper {
+      padding-left: 74px;
+      width: 768px;
+    }
+
+    &__flex-box {
+      display: flex;
+      justify-content: space-between;
+      width: 620px;
+    }
+
+    &__info-block-second {
+      margin: 0;
+    }
+
+    &__section-3 {
+      display: flex;
+      justify-content: center;
+      width: 192px;
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      margin: 0;
+    }
+
+    &__confidence-box-flex {
+      display: flex;
+      width: 550px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .footer {
+    &__wrapper {
+      width: 1152px;
+      padding: 0;
+    }
+
+    &__flex-box {
+      width: 1152px;
+      margin-bottom: 56px;
+    }
+
+    &__section-3 {
+      width: 518px;
+      justify-content: space-between;
+    }
+
+    &__svg-box {
+      height: 37px;
+    }
+
+    &__confidence-info {
+      margin-right: 35px;
+    }
+  }
+}
