@@ -458,7 +458,6 @@ img {
 .s-courses__quote {
   padding-top: 60px;
   margin-bottom: 28px;
-  text-align: justify;
 }
 
 .icon-quote {
@@ -573,6 +572,7 @@ img {
   width: 20px;
   height: 15px;
   fill: #fcae26;
+  transition: all .4s ease;
 }
 
 .courses-container:hover {
@@ -627,7 +627,7 @@ img {
   }
 
   .s-courses-promo {
-    height: 180px;
+    min-height: 180px;
     padding: 40px 20px;
     box-shadow: 5px 3px 12px -7px rgba(0, 0, 0, 0.75);
   }
@@ -711,6 +711,10 @@ img {
 @media (max-width: 767px) {
   .courses-list__item:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  .s-courses__quote {
+    letter-spacing: 2px;
   }
 }
 
