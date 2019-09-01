@@ -64,6 +64,12 @@
 
   &__confidence-info {
     @include text-decor($title-font, 0.85rem, #626263, left, 2.083, none, bold);
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: #83838b;
+    }
   }
 
   &__telegram-svg {
