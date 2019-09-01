@@ -1,6 +1,4 @@
-/*
-   Import partials below
-*/
+/*   Import partials below */
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -747,33 +745,22 @@ img {
   padding-bottom: 50px;
 }
 
-.section-title {
+.section__inner {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.section-title_icon-wrapper {
-  display: inline-block;
+.section__icon {
   width: 30px;
   height: 30px;
-  background-color: #fcae26;
-  border: none;
-  padding: 0;
-  margin: 0;
   border-radius: 50%;
-  position: relative;
-}
-
-.section-title_icon {
   fill: white;
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  top: 20%;
-  left: 20%;
+  background-color: #fcae26;
+  padding: 7px;
 }
 
-.section-title_title {
+.section__title {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4286rem;
   color: #151515;
@@ -787,7 +774,7 @@ img {
 }
 
 .s-courses {
-  padding-top: 40px;
+  padding: 40px 0 50px;
 }
 
 .s-courses__description {
@@ -847,26 +834,8 @@ img {
   margin: 10px auto 18px auto;
 }
 
-.section-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-}
-
-.section-title_icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  fill: white;
-  background-color: #fcae26;
-  padding: 7px;
-}
-
-.section-title_title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.429rem;
-  text-transform: uppercase;
-  padding-left: 15px;
+.courses-wrapper {
+  padding-top: 34px;
 }
 
 .courses-list {
@@ -934,8 +903,9 @@ img {
 
 .howteach__list {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
   padding-top: 30px;
   list-style: none;
 }
@@ -952,7 +922,6 @@ img {
 }
 
 .howteach__item {
-  justify-content: space-between;
   max-width: 280px;
   min-height: 120px;
   margin-bottom: 30px;
@@ -1011,28 +980,6 @@ img {
 
 .howteach__icon-4 {
   fill: #50c4bc;
-}
-
-.section__inner {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.section__icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  fill: white;
-  background-color: #fcae26;
-  padding: 7px;
-}
-
-.section__title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.429rem;
-  text-transform: uppercase;
-  padding-left: 15px;
 }
 
 .structure {
@@ -1225,7 +1172,6 @@ img {
 .footer__button:hover,
 .footer__button:focus {
   background-color: #e99b15;
-  letter-spacing: 0.3px;
 }
 
 .footer__button:active {
@@ -1371,7 +1317,7 @@ img {
     padding-bottom: 70px;
   }
 
-  .section-title_title {
+  .section__title {
     font-family: "Open Sans", sans-serif;
     font-size: 2.3571rem;
     color: #151515;
@@ -1414,6 +1360,7 @@ img {
   .s-courses-promo {
     min-height: 180px;
     padding: 40px 20px;
+    margin-bottom: 68px;
     box-shadow: 5px 3px 12px -7px rgba(0, 0, 0, 0.75);
   }
 
@@ -1421,10 +1368,6 @@ img {
     border-left: 2px solid #fcae26;
     height: auto;
     margin: auto 0 auto 50px;
-  }
-
-  .section-title_title {
-    font-size: 2.286rem;
   }
 
   .courses-list {
@@ -1481,7 +1424,7 @@ img {
   }
 
   .structure__item {
-    padding-top: 25px;
+    padding-top: 68px;
   }
 
   .structure__wrapper {
@@ -1515,6 +1458,7 @@ img {
   .footer__flex-box {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 620px;
   }
 
@@ -1525,6 +1469,7 @@ img {
   .footer__section-3 {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 192px;
     flex-wrap: wrap;
   }
@@ -1535,8 +1480,12 @@ img {
 
   .footer__confidence-box-flex {
     display: flex;
-    max-width: 550px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer__confidence-info {
+    padding-right: 35px;
   }
 }
 
@@ -1547,7 +1496,7 @@ img {
 
   .header {
     height: 968px;
-    padding: 30px 54px;
+    padding: 30px 0px;
     background: url("../images/header-decktop.jpg") center top no-repeat;
     background-size: cover;
   }
@@ -1561,7 +1510,9 @@ img {
   }
 
   .mision__title {
+    padding-bottom: 42px;
     text-align: left;
+    font-size: 4.75rem;
   }
 
   .mision__text {
@@ -1635,12 +1586,26 @@ img {
     padding-top: 115px;
   }
 
+  .courses-wrapper {
+    padding-top: 62px;
+  }
+
   .container {
     width: 1300px;
   }
 
   .s-courses {
     width: 1300px;
+  }
+
+  .s-courses-promo {
+    margin-bottom: 110px;
+  }
+
+  .quote-title,
+  .quote-text {
+    font-size: 1.428rem;
+    line-height: 1.8;
   }
 
   .s-courses__description {
@@ -1662,11 +1627,18 @@ img {
 
   .s-courses__quote {
     width: 535px;
-    padding-right: 30px;
+    padding-top: 68px;
+    margin-bottom: 200px;
   }
 
   .promo-text {
-    padding-right: 150px;
+    padding-right: 170px;
+    font-size: 1.828rem;
+    line-height: 1.5;
+  }
+
+  .v-line {
+    margin: auto 0 auto 200px;
   }
 
   .courses-container {
@@ -1728,7 +1700,13 @@ img {
   }
 
   .footer__confidence-info {
-    margin-right: 20px;
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: 1408px) {
+  .header {
+    padding: 30px 54px;
   }
 }
 
@@ -1739,6 +1717,12 @@ img {
 
   .s-courses__quote {
     letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 1408px) {
+  .header__inner {
+    padding: 0 20px;
   }
 }
 

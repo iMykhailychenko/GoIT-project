@@ -1,7 +1,6 @@
 .howteach__list {
-  display: flex;
+  @include d-flex(between, start);
   flex-flow: row wrap;
-  justify-content: space-between;
   padding-top: 30px;
   list-style: none;
 }
@@ -11,25 +10,24 @@
 }
 
 .howteach__item {
-  justify-content: space-between;
   max-width: 280px;
   min-height: 120px;
   margin-bottom: 30px;
   padding: 0 10px;
 }
+
 .howteach__item:last-child {
   margin-bottom: 0px;
 }
 
 .howteach__icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include d-flex(center, center);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .howteach__icon-container-17 {
   background-color: $light-accent-color;
 }
@@ -55,14 +53,17 @@
 .howteach__icon-7 {
   fill: $main-accent-color;
 }
+
 .howteach__icon-2,
 .howteach__icon-6 {
   fill: $red-color;
 }
+
 .howteach__icon-3,
 .howteach__icon-5 {
   fill: $violet-color;
 }
+
 .howteach__icon-4 {
   fill: $green-color;
 }

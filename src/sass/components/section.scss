@@ -10,33 +10,20 @@
   }
 }
 
-.section-title {
-  display: flex;
-  align-items: center;
+.section__inner {
+  @include d-flex(start, center);
 }
 
-.section-title_icon-wrapper {
-  display: inline-block;
+.section__icon {
   width: 30px;
   height: 30px;
-  background-color: $main-accent-color;
-  border: none;
-  padding: 0;
-  margin: 0;
   border-radius: 50%;
-  position: relative;
+  fill: rgb(255, 255, 255);
+  background-color: $main-accent-color;
+  padding: 7px;
 }
 
-.section-title_icon {
-  fill: white;
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-}
-
-.section-title_title {
+.section__title {
   @include text-decor(
     $title-font,
     1.4286rem,

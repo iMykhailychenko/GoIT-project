@@ -44,7 +44,6 @@
     &:hover,
     &:focus {
       background-color: #e99b15;
-      letter-spacing: 0.3px;
     }
 
     &:active {
@@ -54,9 +53,7 @@
 
   &__svg-box {
     height: 104px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include d-flex(between, center);
     width: 146px;
   }
 
@@ -86,9 +83,7 @@
     height: 37px;
     border-radius: 20px;
     fill: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d-flex(center, center);
     cursor: pointer;
   }
 
@@ -114,8 +109,7 @@
     }
 
     &__flex-box {
-      display: flex;
-      justify-content: space-between;
+      @include d-flex(between, start);
       width: 620px;
     }
 
@@ -124,8 +118,7 @@
     }
 
     &__section-3 {
-      display: flex;
-      justify-content: center;
+      @include d-flex(center, center);
       width: 192px;
       flex-wrap: wrap;
     }
@@ -135,9 +128,11 @@
     }
 
     &__confidence-box-flex {
-      display: flex;
-      max-width: 550px;
-      justify-content: space-between;
+      @include d-flex(start, center);
+    }
+
+    &__confidence-info {
+      padding-right: 35px;
     }
   }
 }
@@ -164,7 +159,7 @@
     }
 
     &__confidence-info {
-      margin-right: 20px;
+      padding-right: 75px;
     }
   }
 }
