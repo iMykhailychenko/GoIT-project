@@ -35,11 +35,13 @@
     margin-top: 32px;
     transition: background-color 200ms linear;
     cursor: pointer;
+    transition: all 0.4s ease 0s;
     @include text-decor($title-font, 1.14rem, #f6f9fa, center, 2, none, bold);
 
     &:hover,
     &:focus {
       background-color: #e99b15;
+      letter-spacing: 0.5px;
     }
 
     &:active {
