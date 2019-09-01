@@ -648,7 +648,7 @@ img {
 
   .courses-container {
     width: 309px;
-    height: 296px;
+    min-height: 296px;
   }
 
   .quote-title {
