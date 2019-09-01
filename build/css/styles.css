@@ -490,6 +490,26 @@ img {
   }
 }
 
+@-webkit-keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
+
+@keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
+
 .header {
   height: 560px;
   padding: 20px;
@@ -722,6 +742,49 @@ img {
   display: none;
 }
 
+.section {
+  padding-bottom: 50px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.section-title_icon-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fcae26;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+}
+
+.section-title_icon {
+  fill: white;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.section-title_title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4286rem;
+  color: #151515;
+  text-align: left;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 15px;
+}
+
 .s-courses__description {
   display: flex;
   flex-direction: column;
@@ -864,9 +927,242 @@ img {
   color: #ffffff;
 }
 
+.howteach__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+  list-style: none;
+}
+
+.howteach__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  color: #626263;
+  text-align: left;
+  line-height: 1.2;
+  text-transform: none;
+  font-weight: none;
+  text-decoration: none;
+}
+
+.howteach__item {
+  justify-content: space-between;
+  max-width: 280px;
+  min-height: 120px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.howteach__item:last-child {
+  margin-bottom: 0px;
+}
+
+.howteach__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.howteach__icon-container-17 {
+  background-color: #faebd0;
+}
+
+.howteach__icon-container-26 {
+  background-color: #fbdcd2;
+}
+
+.howteach__icon-container-35 {
+  background-color: #e2d8f5;
+}
+
+.howteach__icon-container-4 {
+  background-color: #c8eae8;
+}
+
+.howteach__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.howteach__icon-1,
+.howteach__icon-7 {
+  fill: #fcae26;
+}
+
+.howteach__icon-2,
+.howteach__icon-6 {
+  fill: #fc8d66;
+}
+
+.howteach__icon-3,
+.howteach__icon-5 {
+  fill: #824fe3;
+}
+
+.howteach__icon-4 {
+  fill: #50c4bc;
+}
+
+.section__inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  fill: white;
+  background-color: #fcae26;
+  padding: 7px;
+}
+
+.section__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.429rem;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.structure {
+  list-style: none;
+}
+
+.structure__item {
+  padding-top: 15px;
+}
+
+.structure__wrapper {
+  box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 262px;
+  border-radius: 0 29px 0 29px;
+  position: relative;
+}
+
+.structure__wrapper:hover .structure__description {
+  transform: scale(1.2);
+}
+
+.structure__wrapper:hover .structure__title {
+  transform: scale(1.2);
+}
+
+.structure__wrapper:hover.structure__wrapper__1::after {
+  border-color: #f5bf5d;
+}
+
+.structure__wrapper:hover.structure__wrapper__2::after {
+  border-color: #f47c55;
+}
+
+.structure__wrapper:hover.structure__wrapper__3::after {
+  border-color: #9563f3;
+}
+
+.structure__wrapper:hover.structure__wrapper__4::after {
+  border-color: #0ab2a8;
+}
+
+.structure__wrapper::after {
+  content: '';
+  border-width: 1px;
+  border-color: white;
+  border-radius: 0 29px 0 29px;
+  border-style: dashed;
+  position: absolute;
+  width: 245px;
+  height: 226px;
+  top: 18px;
+  left: 18px;
+  -webkit-animation: motion 300ms infinite linear;
+  animation: motion 300ms infinite linear;
+}
+
+@keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
+
+.structure__wrapper__1 {
+  background-color: #faebd0;
+}
+
+.structure__wrapper__1:hover {
+  background-color: rgba(250, 235, 208, 0.8);
+}
+
+.structure__wrapper__2 {
+  background-color: #fbdcd2;
+}
+
+.structure__wrapper__2:hover {
+  background-color: rgba(251, 220, 210, 0.8);
+}
+
+.structure__wrapper__3 {
+  background-color: #e2d8f5;
+}
+
+.structure__wrapper__3:hover {
+  background-color: rgba(226, 216, 245, 0.8);
+}
+
+.structure__wrapper__4 {
+  background-color: #c8eae8;
+}
+
+.structure__wrapper__4:hover {
+  background-color: rgba(200, 234, 232, 0.8);
+}
+
+.structure__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.7857rem;
+  color: #151515;
+  text-align: left;
+  line-height: 1.2;
+  text-transform: none;
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: 50px;
+  overflow: hidden;
+  max-width: 190px;
+  margin: 0 auto;
+  transition: transform 500ms linear;
+}
+
+.structure__description {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1429rem;
+  color: #151515;
+  text-align: left;
+  line-height: 1.375;
+  text-transform: none;
+  font-weight: 400;
+  text-decoration: none;
+  padding-top: 25px;
+  max-width: 190px;
+  max-height: 140px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: transform 500ms linear;
+}
+
 @media (min-width: 768px) {
   .container {
-    width: 690px;
+    width: 620px;
   }
 
   .header {
@@ -940,6 +1236,21 @@ img {
     fill: #fff;
   }
 
+  .section {
+    padding-bottom: 70px;
+  }
+
+  .section-title_title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.3571rem;
+    color: #151515;
+    text-align: left;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
   .container {
     width: 690px;
   }
@@ -1000,6 +1311,68 @@ img {
 
   .quote-text {
     padding-right: 70px;
+  }
+
+  .howteach__list {
+    width: 510px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .howteach__text {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.14rem;
+    color: #626263;
+    text-align: left;
+    line-height: 1.2;
+    text-transform: none;
+    font-weight: none;
+    text-decoration: none;
+  }
+
+  .howteach__item {
+    max-width: 212px;
+    min-height: 160px;
+    margin-bottom: 30px;
+  }
+
+  .howteach__icon-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .structure {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .structure__item {
+    padding-top: 25px;
+  }
+
+  .structure__wrapper {
+    width: 300px;
+    height: 294px;
+  }
+
+  .structure__wrapper::after {
+    width: 262px;
+    height: 260px;
+  }
+
+  .structure__title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.875rem;
+    color: #151515;
+    text-align: left;
+    line-height: 1.2;
+    text-transform: none;
+    font-weight: 700;
+    text-decoration: none;
+    padding-top: 60px;
   }
 }
 
@@ -1092,6 +1465,10 @@ img {
     width: 1300px;
   }
 
+  .section {
+    padding-bottom: 100px;
+  }
+
   .container {
     width: 1300px;
   }
@@ -1132,6 +1509,37 @@ img {
 
   .courses-list__item:not(:last-child) {
     border-right: 1px dashed #b9b9b9;
+  }
+
+  .howteach__list {
+    width: 1234px;
+    justify-content: flex-start;
+  }
+
+  .howteach__text {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.13rem;
+    color: #626263;
+    text-align: left;
+    line-height: 1.28;
+    text-transform: none;
+    font-weight: none;
+    text-decoration: none;
+  }
+
+  .howteach__item {
+    max-width: 300px;
+    min-height: 210px;
+    margin-bottom: 65px;
+  }
+
+  .howteach__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+
+  .howteach__icon-container {
+    width: 100px;
+    height: 100px;
   }
 }
 

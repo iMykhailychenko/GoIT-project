@@ -9,3 +9,13 @@
     border-right: 2px solid #fff;
   }
 }
+
+@keyframes motion {
+  0% {
+    border-style: dotted;
+  }
+
+  100% {
+    border-style: dashed;
+  }
+}
