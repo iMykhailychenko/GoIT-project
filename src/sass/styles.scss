@@ -4,9 +4,13 @@
 @import './normalize';
 @import './fonts';
 @import './variables';
-@import './mixins';
 @import './base';
 
+// helpers
+@import './helpers/mixin';
+@import './helpers/placeholder';
+
 /* Components */
+@import './animation';
 @import './components/section';
 @import './components/structure';
