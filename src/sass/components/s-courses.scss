@@ -1,3 +1,10 @@
+.s-courses {
+  padding-top: 40px;
+  @media (min-width: 1350px) {
+    padding-top: 115px;
+  }
+}
+
 .s-courses__description {
   display: flex;
   flex-direction: column;
@@ -6,6 +13,9 @@
 .s-courses__quote {
   padding-top: 60px;
   margin-bottom: 28px;
+  @media (min-width: 768px) and (max-width: 1350px) {
+    padding-top: 0;
+  }
 }
 
 .icon-quote {
