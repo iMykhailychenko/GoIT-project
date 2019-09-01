@@ -11,11 +11,7 @@
 @import './helpers/placeholder';
 
 // components
-@import './components/animation';
+@import './animation';
 @import './components/header';
 @import './components/navigation';
 @import './components/scroll-top';
-
-body {
-  height: 250vh;
-}

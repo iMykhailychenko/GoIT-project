@@ -30,6 +30,9 @@
   } @else if $justify == end {
     display: flex;
     justify-content: flex-end;
+  } @else if $justify == start {
+    display: flex;
+    justify-content: flex-start;
   }
   @if $align == center {
     align-items: center;
