@@ -13,7 +13,7 @@
 .howteach__item {
   justify-content: space-between;
   max-width: 280px;
-  max-height: 120px;
+  min-height: 120px;
   margin-bottom: 30px;
   padding: 0 10px;
 }
@@ -80,7 +80,7 @@
 
   .howteach__item {
     max-width: 212px;
-    max-height: 160px;
+    min-height: 160px;
     margin-bottom: 30px;
   }
 
@@ -111,7 +111,7 @@
 
   .howteach__item {
     max-width: 300px;
-    max-height: 210px;
+    min-height: 210px;
     margin-bottom: 65px;
   }
 
