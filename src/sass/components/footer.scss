@@ -1,5 +1,4 @@
 // Footer
-
 .footer {
   background-color: $main-dark-color;
   padding-top: 43px;
@@ -26,23 +25,26 @@
     font-style: normal;
   }
 
+  &__info-link-tem {
+    display: block;
+  }
+
   &__button {
+    @extend %btn;
     height: 42px;
     min-width: 192px;
     background-color: $main-accent-color;
-    border-style: none;
     border-radius: 5px;
     margin-top: 32px;
-    padding: 0 20px;
+    padding: 0 18px;
     transition: background-color 200ms linear;
-    cursor: pointer;
     transition: all 0.4s ease 0s;
     @include text-decor($title-font, 1.14rem, #f6f9fa, center, 2, none, bold);
 
     &:hover,
     &:focus {
       background-color: #e99b15;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
     }
 
     &:active {
